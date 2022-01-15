@@ -6,7 +6,7 @@ const galleryEL = document.querySelector('.gallery');
 const onImgElCLick = galleryEL.addEventListener("click",event => {
     event.preventDefault()
     const instance = basicLightbox.create(`
-    <img src=${event.target.src}>
+    <img src=${event.target.dataset.source}>
 `)
 
 instance.show() 

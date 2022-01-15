@@ -1,13 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 
 // Change code below this line
-const galleryEL = document.querySelector('.gallery');
-const galleryEL2 = document.querySelector('.gallery__image');
-const onImgElCLick = galleryEL.addEventListener("click",event => {
-    event.preventDefault()
- 
-
-})
+const galleryEL = document.querySelector('.gallery');  
 const makeGalleryCard = ({preview, original,description} = {}) => {
     return `<a class="gallery__item" href=${original}>
     <img
