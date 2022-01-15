@@ -27,4 +27,4 @@ const makeGalleryCard = ({preview, original,description} = {}) => {
   console.log(galleryItems);
   
   
-  const lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
+  let nameOfPictures = new SimpleLightbox('.gallery a',{captionsData: "alt" , captionDelay:250 });
